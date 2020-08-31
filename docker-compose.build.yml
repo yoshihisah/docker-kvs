@@ -6,7 +6,7 @@ services:
     depends_on:
       - selenium_hub
     environment:
-      - HUB_HOST=selenium_hub
+      - HUB_HOST=dockerkvs_selenium_hub
       - HUB_PORT=4444
   selenium_hub:
     image: selenium/hub:3.141.59-vanadium
